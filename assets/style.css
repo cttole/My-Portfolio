@@ -63,7 +63,8 @@ background-repeat: no-repeat;
 background-size: 100% 0.2em;
 background-position: bottom ;
 transition: all 0.12s ease-in;
-font-size: 1.4rem;
+font-size: 1.1vw;
+
 }
 nav a:hover {
 background-size: 100% 100%;
@@ -92,6 +93,10 @@ text-align: right;
 
 
 }
+.main-banner div h2 {
+flex: 0 0 90%;
+font-size: 2vw;
+}
 .main-banner h2 span {
 font-size:150%;
 color:var(--one);
@@ -103,15 +108,36 @@ position: absolute;
 top: 26%;
 left: 50%;
 transform: translate(-50%, -50%);
-max-block-size: 250px;
+max-block-size: 13vw;
+min-block-size: 150px;
 block-size: auto;
 border-radius: 30px;
 display: flex;
 justify-content: center;
 align-items: center;
-text-align: center;
-
-
 
 }
-  
+
+@media screen and (max-width: 550px) {
+    .main-banner .banner .portrait {
+      justify-content: center;
+      text-align: center;
+      margin-top: -50px;
+      
+      }
+    }
+
+@media screen and (max-width: 810px) {
+.main-banner .banner .portrait {
+justify-content: center;
+text-align: center;
+margin-top: -50px;
+           }
+ }
+
+ @media screen and (max-width: 800px) { 
+.main-banner {
+justify-content: center;
+min-height: 27vh;
+}
+ }
